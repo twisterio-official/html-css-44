@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.task-1 li:first-child {
+    color: red;
+}
+
+.task-1 li:last-child {
+    color: blue;
+}
+
+.task-1 li:nth-child(2) {
+    color: purple;
+}
+
+.task-2 li:nth-child(even) {
+    margin-bottom: 10px;
+}
+
+.main-menu {
+    background-color: #c1c1c1;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Arial;
+}
