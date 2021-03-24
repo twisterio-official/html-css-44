@@ -1,0 +1,47 @@
+/* Стили для Барбершопа */
+@font-face {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-display: swap;
+  src: local("Raleway-Bold"),
+    url("../fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-display: swap;
+  src: local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-display: swap;
+  src: local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+::root {
+  --color-white: #fff;
+  --color-dark: #303030;
+  --color-light-gray: #f7f7f7;
+  --color-gray: #555555;
+  --color-dark-gray: #9da4bd;
+  --color-orange: #ff6c00;
+  --color-dark-blue: #191c26;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.2;
+  overflow-x: hidden;
+  font-family: OpenSans, sans-serif;
+}
