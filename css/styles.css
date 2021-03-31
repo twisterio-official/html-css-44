@@ -39,6 +39,16 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -96,12 +106,38 @@ body {
   opacity: 0.6;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-padding {
+  padding: 130px 0;
+}
+
+.section-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 70;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+}
+
 .section-subtitle {
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 0 0 20px;
+  margin-bottom: 20px;
+}
+
+.section-subtitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-dark);
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .header {
@@ -163,12 +199,90 @@ body {
   font-size: 72px;
   letter-spacing: 0.05em;
   color: var(--color-white);
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 }
 
 .main-subtitle {
   letter-spacing: 0.02em;
   color: #9da4bd;
   font-size: 18px;
-  margin: 0;
+}
+
+.masters-section {
+  background-color: var(--color-light-gray);
+}
+
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.master-item {
+  width: 33.33333%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.master-image {
+  margin-bottom: 30px;
+}
+
+.master-title {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.master-job {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-orange);
+  margin-bottom: 30px;
+}
+
+.master-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.master-social-item + .master-social-item {
+  margin-left: 10px;
+}
+
+.master-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  color: var(--color-dark);
+}
+
+.master-social-link:hover {
+  color: var(--color-orange);
+}
+
+.master-social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-section .section-subtitle {
+  margin-bottom: 44px;
+}
+
+.portfolio-list {
+  display: flex;
+}
+
+.portfolio-item + .portfolio-item {
+  margin-left: 30px;
 }
