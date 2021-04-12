@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: var(--color-dark);
+}
+
+:root {
+    --color-green: #00c673;
+    --color-dark: #343434;
+    --color-grey: #f8f8f8;
+}
+
+.custom-form {
+    max-width: 386px;
+    margin: 50px auto;
+    background-color: var(--color-grey);
+    padding: 78px 62px;
+}
+
+.text-field {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid var(--color-green);
+    border-radius: 5px;
+    padding: 15px 22px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.first-name-field {
+    margin-bottom: 18px;
+}
+
+.last-name-field {
+    margin-bottom: 30px;
+}
+
+.form-title {
+    margin: 0 0 20px;
+}
+
+.form-block {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-label {
+    position: relative;
+    padding-left: 26px;
+    line-height: 26px;
+}
+
+.form-label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--color-green);
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: linear 0.3s;
+}
+
+.checkbox-label::before {
+    border-radius: 2px;
+}
+
+.radio-label::before {
+    border-radius: 50%;
+}
+
+.radio-label::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    left: 3px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: linear 0.3s;
+}
+
+.form-input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.form-input:checked + .checkbox-label::before {
+    background-color: var(--color-green);
+}
+
+.form-input:checked + .radio-label::after {
+    background-color: var(--color-green);
+}
+
+.submit-btn {
+    display: block;
+    border: 1px solid var(--color-green);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+    transition: ease 0.3s;
+    z-index: 0;
+}
+
+.submit-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-green);
+    transition: ease 0.3s;
+    z-index: -1;
+}
+
+.submit-btn:hover {
+    color: #fff;
+}
+
+.submit-btn:hover::before {
+    width: 100%;
+}

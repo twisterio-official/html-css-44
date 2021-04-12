@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Lesson 11</title>
+
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <form class="custom-form">
+            <input
+                type="text"
+                name="first_name"
+                class="text-field first-name-field"
+                placeholder="Your name"
+            />
+            <input
+                type="text"
+                name="last_name"
+                class="text-field last-name-field"
+                placeholder="Your surname"
+            />
+
+            <div class="form-block" role="group" aria-labelby="position-title">
+                <p class="form-title" id="position-title">Your position in the company:</p>
+
+                <div class="form-group">
+                    <input
+                        type="checkbox"
+                        id="position-1"
+                        name="position"
+                        class="form-input checkbox"
+                    />
+                    <label for="position-1" class="form-label checkbox-label">designer</label>
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="checkbox"
+                        id="position-2"
+                        name="position"
+                        class="form-input checkbox"
+                    />
+                    <label for="position-2" class="form-label checkbox-label">programmer</label>
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="checkbox"
+                        id="position-3"
+                        name="position"
+                        class="form-input checkbox"
+                    />
+                    <label for="position-3" class="form-label checkbox-label">manager</label>
+                </div>
+            </div>
+
+            <div class="form-block" role="group" aria-labelby="purpose-title">
+                <p class="form-title" id="purpose-title">Use purpose:</p>
+
+                <div class="form-group">
+                    <input
+                        type="radio"
+                        id="purpose-1"
+                        name="purpose"
+                        class="form-input radio"
+                    />
+                    <label for="purpose-1" class="form-label radio-label">for the company</label>
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="radio"
+                        id="purpose-2"
+                        name="purpose"
+                        class="form-input radio"
+                    />
+                    <label for="purpose-2" class="form-label radio-label">for personal use</label>
+                </div>
+            </div>
+
+            <button class="submit-btn" type="submit">Send</button>
+        </form>
+    </body>
+</html>
