@@ -1,4 +1,4 @@
-/* Стили для Барбершопа */
+/* Шрифты */
 @font-face {
   font-family: "Raleway";
   font-weight: bold;
@@ -23,6 +23,7 @@
     url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
 }
 
+/* Переменные */
 :root {
   --color-white: #fff;
   --color-dark: #303030;
@@ -33,6 +34,7 @@
   --color-dark-blue: #191c26;
 }
 
+/* Нормализация */
 *,
 *::before,
 *::after {
@@ -64,6 +66,7 @@ body {
   color: var(--color-dark);
 }
 
+/* Utility-классы */
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -84,6 +87,10 @@ body {
 
 .m-auto {
   margin: auto;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .margin-b-xl {
@@ -170,6 +177,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Шапка сайта */
 .header {
   position: absolute;
   width: 100%;
@@ -217,6 +225,7 @@ body {
   color: var(--color-orange);
 }
 
+/* Херо секция */
 .hero-section {
   /* background: url("../images/hero-desktop-bg.png") no-repeat center/cover; */
   background-image: url("../images/hero-desktop-bg.png");
@@ -242,6 +251,7 @@ body {
   line-height: 31px;
 }
 
+/* Секция "О нас" */
 .about-us-list {
   display: flex;
   margin-right: 64px;
@@ -267,6 +277,7 @@ body {
   margin-bottom: 40px;
 }
 
+/* Секция "Услуги и цены" */
 .services-section {
   /* background: #111319 url("../images/services-and-prices-bg.png") no-repeat center/cover; */
   background-color: #111319;
@@ -315,6 +326,64 @@ body {
   margin-bottom: 50px;
 }
 
+/* Секция "Преимущества" */
+.benefits-list,
+.benefits-content {
+  width: 50%;
+}
+
+.benefits-list {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  display: block;
+  background-color: var(--color-light-gray);
+  text-align: center;
+  padding: 20px;
+  width: 170px;
+}
+
+.benefits-item:nth-child(1),
+.benefits-item:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.benefits-item:nth-child(1),
+.benefits-item:nth-child(4) {
+  margin-right: 30px;
+  position: relative;
+  top: -15px;
+}
+
+.benefits-number {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.benefits-number sup {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-orange);
+  position: relative;
+  top: -8px;
+}
+
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.benefits-content .section-title {
+  margin-bottom: 20px;
+}
+
+/* Секция "Наши мастера" */
 .masters-section {
   background-color: var(--color-light-gray);
 }
@@ -382,6 +451,7 @@ body {
   height: 20px;
 }
 
+/* Секция "Портфолио" */
 .portfolio-section .section-subtitle {
   margin-bottom: 44px;
 }
@@ -394,6 +464,8 @@ body {
   margin-left: 30px;
 }
 
+
+/* Секция "Контакты" */
 .constacts-section {
   background-color: var(--color-dark-blue);
 }
@@ -421,5 +493,38 @@ body {
 
 .form-message {
   width: 100%;
+  resize: none;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: var(--color-white);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: var(--white);
+}
+
+.form-field::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--color-dark-gray);
+  opacity: 0.4;
+}
+
+.form-message {
+  margin-bottom: 44px;
+  height: 68px;
   resize: none;
 }
